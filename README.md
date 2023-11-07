@@ -31,7 +31,14 @@ http://localhost:10248/uploads
 you can use curl to do some simple test on webdav's connections.
 
 ```
+# uploads a file
 curl --digest  -u  'jd:pw' "http://localhost:10248/uploads/"  -T 1.txt
+
+# downloads a file
+curl --digest  -u  'jd:pw' "http://localhost:10248/uploads/1.txt"  -o 1_new.txt
+
+# list all files
+curl -X PROPFIND --digest -u 'jd:pw' http://localhost:10248/uploads/   -H "Depth: 1" |grep uploads
 ```
 
 or , one can use any webdav client,like ios app: ES file explorer to open and uploads files.
