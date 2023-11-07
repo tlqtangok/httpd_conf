@@ -9,7 +9,7 @@ sh setup_httpd.sh
 ```
 
 
-this will start a docker server on :10208-->:80
+this will start a docker server on :10248-->:80
 
 the cgi will run like:
 
