@@ -28,7 +28,7 @@ you can use curl to do some simple test on webdav's connections.
 curl --digest  -u  'jd:pw' "http://localhost:10248/uploads/"  -T 1.txt
 ```
 
-use any webdav client,like ios app: ES file explorer to open and uploads files.
+or , one can use any webdav client,like ios app: ES file explorer to open and uploads files.
 
 happy , enjoy, gogogo :)
 
