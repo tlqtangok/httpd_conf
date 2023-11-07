@@ -5,7 +5,6 @@ docker rm -f httpd_v0
 docker run -dit --name httpd_v0 -h httpd_v0 -p 10248:80 -v /home/ubuntu/jd/t/html:/usr/local/apache2/htdocs  -v $t/vt:/uploads httpd
 
 
-
 docker cp httpd.conf httpd_v0:/usr/local/apache2/conf/httpd.conf
 docker cp httpd-dav.conf httpd_v0:/usr/local/apache2/conf/extra/httpd-dav.conf
 docker cp printenv httpd_v0:/usr/local/apache2/cgi-bin/printenv
@@ -30,6 +29,9 @@ ln -s /uploads uploads
 chown -R jd:jd uploads/
 chmod -R 0777 uploads
 
+#setup timezone
+rm /etc/localtime 
+cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 date "+%Y%m%d_%H%M" >> uploads/startup_log.txt
 
 EOF
