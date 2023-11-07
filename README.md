@@ -1,7 +1,13 @@
 # httpd_conf
 my httpd_conf on docker , include cgi, webdav
 
+# deps
+```
+docker pull httpd
+```
+
 # usage
+
 to run a httpd + cgi + webdav server, use 
 ```
 sh setup_httpd.sh
