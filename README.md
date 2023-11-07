@@ -30,6 +30,8 @@ curl --digest  -u  'jd:pw' "http://localhost:10248/uploads/"  -T 1.txt
 
 or , one can use any webdav client,like ios app: ES file explorer to open and uploads files.
 
+![es file explorer](./img/es.png)
+
 happy , enjoy, gogogo :)
 
 
